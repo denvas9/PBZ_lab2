@@ -385,8 +385,7 @@ namespace ConsoleApp2
             #region view_database
             static void viewOwners()
             {
-                string sql =
-                    $@"SELECT * FROM car_owner;";
+                string sql ="SELECT * FROM car_owner";
 
                 MySqlCommand command = new MySqlCommand(sql, conn);
 
@@ -404,8 +403,7 @@ namespace ConsoleApp2
             }
             static void viewCars()
             {
-                string sql =
-                    $@"SELECT * FROM cars;";
+                string sql = "SELECT * FROM cars";
 
                 MySqlCommand command = new MySqlCommand(sql, conn);
 
@@ -423,8 +421,7 @@ namespace ConsoleApp2
             }
             static void viewWorkers()
             {
-                string sql =
-                    $@"SELECT * FROM workers";
+                string sql = "SELECT * FROM workers";
 
                 MySqlCommand command = new MySqlCommand(sql, conn);
 
@@ -442,8 +439,7 @@ namespace ConsoleApp2
             }
             static void viewInspections()
             {
-                string sql =
-                    $@"SELECT * FROM inspections;";
+                string sql ="SELECT * FROM inspections";
 
                 MySqlCommand command = new MySqlCommand(sql, conn);
 
