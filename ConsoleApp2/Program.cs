@@ -452,22 +452,6 @@ namespace ConsoleApp2
                 }
                 reader.Close(); // закрываем reader
             }
-            static void viewInspectionIDs()
-            {
-                string sql =
-                    $@"SELECT DISTINCT inspection_id FROM inspections;";
-
-                MySqlCommand command = new MySqlCommand(sql, conn);
-
-                MySqlDataReader reader = command.ExecuteReader();
-                // читаем результат
-                while (reader.Read())
-                {
-                    // элементы массива [] - это значения столбцов из запроса SELECT
-                    Console.WriteLine(reader[0].ToString());
-                }
-                reader.Close(); // закрываем reader
-            }
             #endregion
 
             static void CarCount(string dateStart, string dateEnd)
