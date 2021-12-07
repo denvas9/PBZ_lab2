@@ -7,8 +7,6 @@ using MySql.Data.MySqlClient;
 
 namespace ConsoleApp2
 {
-    namespace pbz_2
-    {
         class Program
         {
             public static MySqlConnection conn;
@@ -552,5 +550,4 @@ namespace ConsoleApp2
                 return conn;
             }
         }
-    }
 }
